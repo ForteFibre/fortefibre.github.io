@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Activity ForteFibre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+		/* For demo purpose only */
+
+		/*
+	GREEN
+	8dc63f
+	RED
+	FA5555
+	TURQUOISE
+	27E1CE
+	BLUE
+	2772DB
+	ORANGE
+	FF7844
+	YELLOW
+	FCDA05
+	PINK
+	F64662
+	PURPLE
+	7045FF
+
+	*/
+
+		/* For Demo Purposes Only ( You can delete this anytime :-) */
+		#colour-variations {
+			padding: 10px;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.5s;
+			width: 140px;
+			position: fixed;
+			left: 0;
+			top: 100px;
+			z-index: 999999;
+			background: #fff;
+			/*border-radius: 4px;*/
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			-webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			-moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			-ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+		}
+
+		#colour-variations.sleep {
+			margin-left: -140px;
+		}
+
+		#colour-variations h3 {
+			text-align: center;
+			;
+			font-size: 11px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #777;
+			margin: 0 0 10px 0;
+			padding: 0;
+			;
+		}
+
+		#colour-variations ul,
+		#colour-variations ul li {
+			padding: 0;
+			margin: 0;
+		}
+
+		#colour-variations ul {
+			margin-bottom: 20px;
+			float: left;
+		}
+
+		#colour-variations li {
+			list-style: none;
+			display: inline;
+		}
+
+		#colour-variations li a {
+			width: 20px;
+			height: 20px;
+			position: relative;
+			float: left;
+			margin: 5px;
+		}
+
+
+
+		#colour-variations li a[data-theme="style"] {
+			background: #8dc63f;
+		}
+
+		#colour-variations li a[data-theme="red"] {
+			background: #FA5555;
+		}
+
+		#colour-variations li a[data-theme="turquoise"] {
+			background: #27E1CE;
+		}
+
+		#colour-variations li a[data-theme="blue"] {
+			background: #2772DB;
+		}
+
+		#colour-variations li a[data-theme="orange"] {
+			background: #FF7844;
+		}
+
+		#colour-variations li a[data-theme="yellow"] {
+			background: #FCDA05;
+		}
+
+		#colour-variations li a[data-theme="pink"] {
+			background: #F64662;
+		}
+
+		#colour-variations li a[data-theme="purple"] {
+			background: #7045FF;
+		}
+
+		#colour-variations a[data-layout="boxed"],
+		#colour-variations a[data-layout="wide"] {
+			padding: 2px 0;
+			width: 48%;
+			border: 1px solid #ededed;
+			text-align: center;
+			color: #777;
+			display: block;
+		}
+
+		#colour-variations a[data-layout="boxed"]:hover,
+		#colour-variations a[data-layout="wide"]:hover {
+			border: 1px solid #777;
+		}
+
+		#colour-variations a[data-layout="boxed"] {
+			float: left;
+		}
+
+		#colour-variations a[data-layout="wide"] {
+			float: right;
+		}
+
+		.option-toggle {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-top: 5px;
+			margin-right: -30px;
+			width: 30px;
+			height: 30px;
+			background: #8dc63f;
+			text-align: center;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			color: #fff;
+			cursor: pointer;
+			-webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			-moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			-ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+		}
+
+		.option-toggle i {
+			top: 2px;
+			position: relative;
+		}
+
+		.option-toggle:hover,
+		.option-toggle:focus,
+		.option-toggle:active {
+			color: #fff;
+			text-decoration: none;
+			outline: none;
+		}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+
+<!--
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example:
+		<body class="boxed">
+	-->
+
+<body>
+	<!-- Loader -->
+	<div class="fh5co-loader"></div>
+
+	<div id="fh5co-page">
+		<section id="fh5co-header">
+			<div class="container">
+				<nav role="navigation">
+					<ul class="pull-left left-menu">
+						<!--<li><a href="about.html">About</a></li>-->
+						<!--<li><a href="gallary.html">Gallary</a></li>-->
+						<li><a href="activity.html">Activity</a></li>
+						<li><a href="members.html">Members</a></li>
+					</ul>
+					<h1 id="fh5co-logo"><a href="index.html"><b>Forte Fibre</b><span>.</span></a></h1>
+					<ul class="pull-right right-menu">
+						<li class="active"><a href="access.html">Access</a></li>
+						<!--<li class="fh5co-cta-btn"><a href="#">Contact</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- #fh5co-header -->
+
+		<section id="fh5co-hero" class="no-js-fullheight" style="background-image: url(images/wood_logo.JPG);"
+			data-next="yes">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="fh5co-intro no-js-fullheight">
+					<div class="fh5co-intro-text">
+						<!--
+							INFO:
+							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
+							Example:
+							<div class="fh5co-right-position">
+						-->
+						<div class="fh5co-center-position">
+							<h2 class="animate-box">活動実績</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-learn-more animate-box">
+				<a href="#" class="scroll-btn">
+					<!--<span class="text">Come on if you can...</span>-->
+					<span class="arrow"><i class="icon-chevron-down"></i></span>
+				</a>
+			</div>
+		</section>
+
+
+		<section id="fh5co-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">
+							2021
+						</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">3月7日</td>
+									<td>東海地区交流ロボコンのオンライン交流会に参加．</td>
+								</tr>
+								<tr>
+									<td class="act_date">3月11,12日</td>
+									<td>関西春ロボコンに1回生チームが出場し，優勝．一志株式会社様より特別賞を受賞．</td>
+								</tr>
+								<tr>
+									<td class="act_date">3月19日</td>
+									<td>関東春ロボコンに1回生チームが出場．３位．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月17日</td>
+									<td>オンラインで行われたSummer Robot Contest(SRC)に1回生チームが出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月10日</td>
+									<td>ＮＨＫ学生ロボコン2021全国大会出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月21日</td>
+									<td>けいはんなイノベーションセンターで行われたキャチロボバトルコンテストに4回生の2チームが出場．ベスト4</td>
+								</tr>
+							</tbody>
+						</table>
+						<h1 class="popular-text">
+							2020
+						</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">2月23日</td>
+									<td>綾部市中央公民館にてロボットサミット2020に参加．大会出場機体等の展示や操縦体験等を行った．</td>
+								</tr>
+								<tr>
+									<td class="act_date">春 </td>
+									<td>関西春ロボコンに向けて一回生チーム二組が活動．しかし，コロナウイルス流行に伴い大会が中止．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月13日</td>
+									<td>オンラインで行われた第10回キャチロボバトルコンテストに２回生チームが出場．</td>
+								</tr>
+							</tbody>
+						</table>
+						<h1 class="popular-text">
+							2019
+						</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">2月16日</td>
+									<td>綾部市中央公民館にてロボットサミット2019に参加．大会出場機体等の展示や操縦体験等を行った．</td>
+								</tr>
+								<tr>
+									<td class="act_date">3月13日</td>
+									<td>同志社大学様にて関西春ロボコンに一回生チームが出場．2位．</td>
+								</tr>
+								<tr>
+									<td class="act_date">5月26日</td>
+									<td>ＮＨＫ学生ロボコン2019全国大会出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月31日</td>
+									<td>岐阜大学様にて東海地区交流ロボコン（とうろぼ）に2回生チームが出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月22日</td>
+									<td>金沢工業大学様にてSummer Robot Contest(SRC)に1回生チームが出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月9,10日</td>
+									<td>京都市青少年科学センターで「青少年のための科学の祭典」京都大会に参加．パラレルリンクなどのロボットを展示</td>
+								</tr>
+							</tbody>
+						</table>
+						<h1 class="popular-text">
+							2018
+						</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">3月13日</td>
+									<td>大阪大学様にて関西春ロボコンに1回生チームが出場．2位</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月10日</td>
+									<td>ＮＨＫ学生ロボコン2018全国大会出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月9日</td>
+									<td>京都製作所様にて第八回キャチロボバトルコンテストに4回生チームが出場．優勝</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月16日</td>
+									<td>工学院大学様にてF^3RCに1回生チームが2組出場．<br>
+										「No Progress」:優勝<br>
+										「ﾊﾞﾔﾘｰｽｱｶﾈﾁｬﾝ」:4位，F^3RC大賞受賞
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h1 class="popular-text">
+							2017
+						</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">6月11日</td>
+									<td>ＮＨＫ学生ロボコン2017全国大会出場．予選１位になるもベスト８。技術賞、ローム賞をダブル受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">5月3,4日</td>
+									<td>三重大学にて関西圏５大学合同で練習試合</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月20日</td>
+									<td>金沢工業大学様にてSummer Robot Contest(SRC)に1回生チームが出場．4位</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月24日</td>
+									<td>綾部市中央公民館にて綾部ものづくり体験ツアーに参加．大会出場機体等の展示や操縦体験等を行った．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月2日</td>
+									<td>豊橋技術科学大学様にて東海地区交流ロボコン（とうろぼ）に2回生チームが出場．</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月11日</td>
+									<td>京都製作所様にて第七回キャチロボバトルコンテストに２回生チームが出場．ベスト8</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月20日</td>
+									<td>関西5大学合同ロボコンに出場．デザイン賞を獲得</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月11,12日</td>
+									<td>京都市青少年科学センターで「第22回青少年のための科学の祭典」京都大会に参加　パラレルリンクなどのロボットを展示</td>
+								</tr>
+							</tbody>
+						</table>
+						<h1 class="popular-text">
+							2016
+						</h1>
+						<table class="table table-striped">
+
+							<tbody>
+								<tr>
+									<td class="act_date">7月10日</td>
+									<td>ＮＨＫ学生ロボコン2016全国大会出場．ベスト８</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月10日</td>
+									<td>岐阜大学様にて東海地区交流ロボコン（とうろぼ）に2回生チームが出場．　ベスト5</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月11日</td>
+									<td>京都製作所様にて第六回キャチロボバトルコンテストに２回生チームが出場． ベスト8，デザイン賞をダブル受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月18日</td>
+									<td>金沢工業大学様にてSummer Robot Contest(SRC)に1回生チームが出場．3位</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月1日</td>
+									<td>上賀茂小学校でのロボット体験イベントに参加．大会出場ロボットの解説や操作体験展示を行った</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月2日</td>
+									<td>関西5大学合同ロボコンに出場．新人の部で4位，そしてデザイン賞を獲得</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月12,13日</td>
+									<td>京都市青少年科学センターで「第21回青少年のための科学の祭典」京都大会に参加　パラレルリンクなどのロボットを展示</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">
+							2015
+						</h1>
+						<table class="table table-striped">
+
+							<tbody>
+								<tr>
+									<td class="act_date">6月7日</td>
+									<td> NHK学生ロボコン2015　出場（シード校）　ベスト16</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月28日</td>
+									<td>SRC2015　出場　特別賞受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月28日</td>
+									<td>綾部市中央公民館にて「綾部ものづくりツアー」に参加 <a href="https://www.youtube.com/watch?v=8hyPCRFNigA"
+											target="_blank">YouTube</a><br>
+										大会出場ロボットの解説，体験用ロボットの操作体験などを行った</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月13日</td>
+									<td>第5回キャチロボバトルコンテスト　出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月17日</td>
+									<td>関西5大学合同ロボコン　出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月11日</td>
+									<td>大阪市立生涯学習センターにて「大阪市ロボット教室」に参加．ロボットの操作体験，製作体験を行った</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月7,8日</td>
+									<td>京都市青少年科学センターにて「第20回青少年のための科学の祭典」京都大会に参加。ロボットの展示などを行った</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2014</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">6月1日</td>
+									<td>NHK大学ロボコン2014　ベスト8・デザイン賞受賞・トヨタ自動車株式会社様より特別賞を受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月18日</td>
+									<td>NHK京都放送局の番組「ニュース610　京いちにち」にて特集していただきました。</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月19日</td>
+									<td>NHK関西地域向けの番組「ぐるっと関西　おひるまえ」に生出演</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2013</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月</td>
+									<td>入学式オリエンテーションプログラムにてプロジェクト紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2013　ベスト8<br>ローム株式会社様より特別賞を受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>オープンキャンパスにてプロジェクトの紹介とロボットの展示</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月７日</td>
+									<td>第3回キャチロボバトルコンテスト出場。１回生チームが優勝。上回生チームが準優勝・審査員特別賞受賞</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2012</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月</td>
+									<td>入学式オリエンテーションプログラムにてプロジェクト紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2012　最終審査不通過</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>部内ロボコンを開催</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>オープンキャンパスにてプロジェクトの紹介とロボットの展示</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月6,7日</td>
+									<td>SPP事業の一環として京丹後市立丹波小学校にてプロジェクトの紹介とロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月8日</td>
+									<td>第2回キャチロボバトルコンテスト出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月18日</td>
+									<td>合同ロボコン出場　一回生の部で二位受賞</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2011</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月</td>
+									<td>KIT入学式センターホール前にて展示・実演<br>
+										入学式オリエンテーションプログラムにてプロジェクト紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2011　1次ビデオ審査落選</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>第18回かわさきロボット競技大会出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月</td>
+									<td>松ケ崎祭にてロボットを展示</td>
+								</tr>
+								<tr>
+									<td class="act_date">12月17日</td>
+									<td>第1回キャチロボバトルコンテスト出場　4チーム中3位</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2010</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月4日</td>
+									<td>入学式においてセンターホール前でのロボット展示及びセンターホールで活動紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2010出場　予選リーグ敗退</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>オープンキャンパス</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月11日</td>
+									<td>合同ロボコン出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月</td>
+									<td>亀岡サイエンスフェスタ出展</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2009</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月4日</td>
+									<td>入学式においてセンターホール前でのロボット展示及びセンターホールでの活動紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">5月31日</td>
+									<td>創立記念事業の一環として，センターホール2階にて展示・実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2008出場　予選リーグ敗退 特別賞受賞</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>オープンキャンパス プロジェクト概要説明．テストラン映像・NHK放送映像の紹介，ロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月</td>
+									<td>SPP事業の一環として京丹後市の小学校にてプロジェクトの紹介とロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月10日</td>
+									<td>合同ロボコン出場</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月</td>
+									<td>オープンキャンパスにてプロジェクト概要説説明．ロボットの実演・操縦体験</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月</td>
+									<td>松ケ崎祭にてジャガバターを販売しつつロボットを展示</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2008</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月4日</td>
+									<td>KIT入学式センターホール前にて展示・実演<br>
+										入学式オリエンテーションプログラムにてプロジェクト紹介</td>
+								</tr>
+								<tr>
+									<td class="act_date">5月31日</td>
+									<td>創立記念事業の一環として，センターホール2階にて展示・実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2008出場　予選リーグ敗退</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月20日</td>
+									<td>三大学体育大会(三繊)開会式においてプロジェクト紹介とロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月4,5日</td>
+									<td>SPP事業の一環として京丹後市立丹波小学校にてプロジェクトの紹介とロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月26日</td>
+									<td>オープンキャンパス プロジェクト概要説説明．ロボットの実演・操縦体験</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月6日</td>
+									<td>松ヶ崎小学校において小学生とその保護者を対象にプロジェクトの説明とロボットの実演，操縦体験をしてもらう．</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月11,12日</td>
+									<td>京都学生祭典の企画としてみやこめっせにてブース展示．ロボットの実演・操縦体験，パネル展示</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月26日</td>
+									<td>オープンキャンパス プロジェクト概要説説明．ロボットの実演・操縦体験</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月8,9日</td>
+									<td>京丹後ものづくりフェア</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月</td>
+									<td>松ケ崎祭においてロボットの実演</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2007</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月</td>
+									<td>KIT入学式センターホール前にて展示・実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">5月</td>
+									<td>KIT創立記念センターホール2階にて展示・実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">6月</td>
+									<td>NHK大学ロボコン2007初出場　ベスト8</td>
+								</tr>
+								<tr>
+									<td class="act_date">7月10,11日</td>
+									<td>アルスにてロボットの展示</td>
+								</tr>
+								<tr>
+									<td class="act_date">8月9日</td>
+									<td>KITオープンキャンパス機械システム工学科見学ルートにてプレゼンテーション<br>
+										また、パネル展示，ロボットの展示及び操縦体験</td>
+								</tr>
+								<tr>
+									<td class="act_date">9月24日</td>
+									<td>大阪大学のロボコンチーム「ロボはん」さんと交流会</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月</td>
+									<td>第19回全日本ロボット相撲中国大会初出場！</td>
+								</tr>
+								<tr>
+									<td class="act_date">10月28日</td>
+									<td>オープンキャンパス．夏休みに製作したロボットの実演</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月10,11日</td>
+									<td>京都府商工労働観光部ものづくり振興課の方々より出展依頼のお話をいただき、京都ものづくりフェア2007へ出展</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月</td>
+									<td>第28回全日本マイクロマウス大会出場（未完走）</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12 col-sm-12 animate-box">
+						<h1 class="popular-text">2006</h1>
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td class="act_date">4月26日</td>
+									<td>工繊ロボコン始動　機械科40名以上が集まる</td>
+								</tr>
+								<tr>
+									<td class="act_date">11月24,25日</td>
+									<td>第27回全日本マイクロマウス大会初出場</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- END #fh5co-features-2 -->
+			<footer id="fh5co-footer">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+							<div class="fh5co-footer-widget">
+								<h3>Company</h3>
+								<ul class="fh5co-links">
+									<li><a href="index.html">トップページ</a></li>
+									<!--<li><a href="about.html">実績</a></li>-->
+									<li><a href="activity.html">活動</a></li>
+									<li><a href="members.html">部員</a></li>
+									<li><a href="freshman.html">新入生へ</a></li>
+									<li><a href="blog/">ブログ</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+							<div class="fh5co-footer-widget">
+								<h3>Contact Us</h3>
+								<p>
+									<a href="mailto:kitrobocon@gmail.com">kitrobocon @ gmail.com</a> <br>
+									京都府京都市左京区松ケ崎橋上町 <br>
+									京都工芸繊維大学松ヶ崎キャンパス<br>
+									ものづくり教育研究センター2階201号室<br>
+
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+							<div class="fh5co-footer-widget">
+								<h3>Follow Us</h3>
+								<ul class="fh5co-social">
+									<li><a href="https://twitter.com/kitrobocon"><i class="icon-twitter"></i></a></li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- END #fh5co-footer -->
+	</div>
+	<!-- END #fh5co-page -->
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		$(function () {
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+					expires: 30,
+					isManagingLoad: true
+				}
+			});
+			$('.option-toggle').click(function () {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	<!--
+	INFO:
+	jQuery Cookie for Demo Purposes Only.
+	The code below is to toggle the layout to boxed or wide
+	-->
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$(function () {
+
+			if ($.cookie('layoutCookie') != '') {
+				$('body').addClass($.cookie('layoutCookie'));
+			}
+
+			$('a[data-layout="boxed"]').click(function (event) {
+				event.preventDefault();
+				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/' });
+				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
+			});
+
+			$('a[data-layout="wide"]').click(function (event) {
+				event.preventDefault();
+				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
+				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
+			});
+		});
+	</script>
+
+</body>
+
+</html>
